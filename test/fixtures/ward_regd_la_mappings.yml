@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  WD15CD: MyString
+  WD15NM: MyString
+  REGD15CD: MyString
+  REGD14NM: MyString
+  PAR15CD: MyString
+  PAR15NM: MyString
+  LAD15CD: MyString
+  LAD15NM: MyString
+
+two:
+  WD15CD: MyString
+  WD15NM: MyString
+  REGD15CD: MyString
+  REGD14NM: MyString
+  PAR15CD: MyString
+  PAR15NM: MyString
+  LAD15CD: MyString
+  LAD15NM: MyString
