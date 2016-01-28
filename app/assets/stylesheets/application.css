@@ -38,10 +38,11 @@ body {
   background-position: right center;
 }
 
-.pretty th .asc {
+/*.pretty th .asc {
   background-image: url(<%= asset_path 'up_arrow.gif' %>);
 }
 
 .pretty th .desc {
   background-image: url(<%= asset_path 'down_arrow.gif' %>);
 }
+*/
