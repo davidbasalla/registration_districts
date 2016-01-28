@@ -2,8 +2,6 @@ Rails.application.routes.draw do
 
   get 'ni_registration_offices' => 'ni_registration_offices#index'
 
-  get 'scotland_regd_la_mappings/index'
-
   get 'ldg_entries' => 'ldg_entries#index'
 
   get 'scotland_regd_la_mappings' => 'scotland_regd_la_mappings#index'
