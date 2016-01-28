@@ -4,10 +4,10 @@
 <thead>
   <tr>
     <th>#</th>
-    <th>Title</th>
-    <th>Town/City</th>
-    <th>Postcode</th>
-    <th>URL</th>
+    <th><%= sortable("title", "Title") %></th>
+    <th><%= sortable("town_city", "Town/City") %></th>
+    <th><%= sortable("postcode", "Postcode") %></th>
+    <th><%= sortable("url", "URL") %></th>
   </tr>
 </thead>
 
@@ -17,7 +17,7 @@
   <td><%= entry.title %></td>
   <td><%= entry.town_city %></td>
   <td><%= entry.postcode %></td>
-  <td><%= entry.url %></td>
+  <td><%= link_to nil, entry.url %></td>
 </tr>
 <% end %>
 </table>
