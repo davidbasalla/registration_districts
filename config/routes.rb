@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'scotland_regd_la_mappings/index'
 
+  get 'ldg_entries' => 'ldg_entries#index'
+
   get 'scotland_regd_la_mappings' => 'scotland_regd_la_mappings#index'
 
   get 'regd_la_mappings' => 'ward_regd_la_mappings#index_reg_la'

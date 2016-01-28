@@ -1,0 +1,2 @@
+module LdgEntriesHelper
+end
