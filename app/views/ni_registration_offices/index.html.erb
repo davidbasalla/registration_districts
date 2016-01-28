@@ -1,0 +1,19 @@
+<%= render "ni_mappings_header" %>
+
+<table class="table">
+<thead>
+  <tr>
+    <th>#</th>
+    <th>Office Name</th>
+    <th>Local Authority</th>
+  </tr>
+</thead>
+
+<% @mappings.each_with_index do |mapping, index| %>
+<tr>
+  <td><%= index + 1 %></td>
+  <td><%= mapping.name %></td>
+  <td><%= mapping.council %></td>
+</tr>
+<% end %>
+</table>
