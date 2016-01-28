@@ -13,3 +13,21 @@
  *= require_tree .
  *= require_self
  */
+
+body {
+  padding-top: 0px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+
+.title-nav {
+  font-weight: bold;
+  font-size: xx-large;
+  padding-right: 30px;
+}
+
+.explanation-header {
+  padding-left: 15px;
+  padding-bottom: 20px;
+}
