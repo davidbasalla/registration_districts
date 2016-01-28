@@ -1,0 +1,21 @@
+<%= render "mappings_header" %>
+
+<table class="table">
+<thead>
+  <tr>
+    <th>#</th>
+    <th>Ward Name</th>
+    <th>Registration District Name</th>
+    <th>Local Authority Name</th>
+  </tr>
+</thead>
+
+<% @mappings.each_with_index do |mapping, index| %>
+<tr>
+  <td><%= index + 1 %></td>
+  <td><%= mapping.ward_name %></td>
+  <td><%= mapping.registration_district_name %></td>
+  <td><%= mapping.local_authority_name %></td>
+</tr>
+<% end %>
+</table>

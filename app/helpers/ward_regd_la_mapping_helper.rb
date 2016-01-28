@@ -1,0 +1,2 @@
+module WardRegdLaMappingHelper
+end

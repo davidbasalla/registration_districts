@@ -1,0 +1,21 @@
+<%= render "mappings_header" %>
+
+<table class="table">
+<thead>
+  <tr>
+  <th>#</th>
+  <th><%= "Registration District Name" %></th>
+  <th>Local Authority count</th>
+  <th>has LocalDirectGov entries (not accurate)</th>
+  </tr>
+</thead>
+
+<% @mappings.each_with_index do |mapping, index| %>
+<tr>
+  <td><%= index + 1 %></td>
+  <td><%= mapping.registration_district_name %></td>
+  <td><%= mapping.la_count %></td>
+  <td><%= mapping.ldg_matches.count %>
+</tr>
+<% end %>
+</table>

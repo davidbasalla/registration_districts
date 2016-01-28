@@ -3,6 +3,10 @@ Rails.application.routes.draw do
 
   get 'scotland_regd_la_mappings' => 'scotland_regd_la_mappings#index'
 
+  get 'regd_la_mappings' => 'ward_regd_la_mappings#index_reg_la'
+  get 'regd_mappings' => 'ward_regd_la_mappings#index_reg'
+  resources :ward_regd_la_mappings
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
