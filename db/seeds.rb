@@ -8,4 +8,5 @@
 
 Importer.new(WardRegdLaMapping, "db/WD15_REGD15_LAD15_EW_LU.csv").import
 Importer.new(LdgEntry, "db/local_register_offices.csv").import
+Importer.new(ScottishRegistrationDistrict, "db/scottish_reg_list.csv").import
 Importer.new(NiRegistrationOffice, "db/ni_reg_list.csv").import
