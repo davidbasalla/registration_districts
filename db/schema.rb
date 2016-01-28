@@ -11,22 +11,50 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160127155029) do
+ActiveRecord::Schema.define(version: 20160128160034) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "ward_regd_la_mappings", force: :cascade do |t|
-    t.string   "WD15CD"
-    t.string   "WD15NM"
-    t.string   "REGD15CD"
-    t.string   "REGD14NM"
-    t.string   "PAR15CD"
-    t.string   "PAR15NM"
-    t.string   "LAD15CD"
-    t.string   "LAD15NM"
+  create_table "ldg_entries", force: :cascade do |t|
+    t.string   "title"
+    t.string   "address_line_1"
+    t.string   "address_line_2"
+    t.string   "address_line_3"
+    t.string   "town_city"
+    t.string   "postcode"
+    t.string   "url"
+    t.datetime "created_at",     null: false
+    t.datetime "updated_at",     null: false
+  end
+
+  create_table "ni_registration_offices", force: :cascade do |t|
+    t.string   "name"
+    t.string   "council"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "scottish_registration_districts", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "reg_id"
+    t.string   "type"
+    t.string   "council"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ward_regd_la_mappings", force: :cascade do |t|
+    t.string   "ward_code"
+    t.string   "ward_name"
+    t.string   "registration_district_code"
+    t.string   "registration_district_name"
+    t.string   "parish_code"
+    t.string   "parish_name"
+    t.string   "local_authority_code"
+    t.string   "local_authority_name"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
 end
