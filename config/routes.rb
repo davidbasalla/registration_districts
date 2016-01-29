@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  root 'ward_regd_la_mappings#index_reg_la'
+
   get 'ni_registration_offices' => 'ni_registration_offices#index'
 
   get 'ldg_entries' => 'ldg_entries#index'
