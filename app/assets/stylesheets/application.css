@@ -38,6 +38,14 @@ body {
   background-position: right center;
 }
 
+.panel-heading a:after {
+  content:"-";
+  float: right;
+  color: grey;
+}
+.panel-heading a.collapsed:after {
+    content:"+";
+}
 /*.pretty th .asc {
   background-image: url(<%= asset_path 'up_arrow.gif' %>);
 }

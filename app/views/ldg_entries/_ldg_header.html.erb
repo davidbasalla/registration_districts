@@ -6,12 +6,15 @@ Based on data from LocalDirectGov Register Offices CSV
 </h3>
 </p>
 
-<div class="panel panel-warning">
-  <div class="panel-heading">Notes</div>
-    <div class="panel-body">
-      <p>
-        Only England and Wales appear to be supported to a good standard. Scotland has many (if not most) broken links. Northern Ireland has no entries at all.
-      </p>
-    </div>
-  </div>
-</div>
+<%= render partial: "panel",
+          locals:
+            {
+              class_name: "panel-warning",
+              collapse_id: "collapseOne",
+              title: "Notes",
+              content: 
+                "<p>
+                  Only England and Wales appear to be supported to a good standard. Scotland has many (if not most) broken links. Northern Ireland has no entries at all.
+                </p>"
+            } 
+%>

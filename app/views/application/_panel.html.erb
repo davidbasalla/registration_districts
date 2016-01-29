@@ -1,0 +1,14 @@
+<div class="<%= "panel #{class_name}" %>">
+  <div class="panel-heading">
+    <h6 class="panel-title">
+      <a data-toggle="collapse" data-target="#<%= collapse_id %>" href="#<%= collapse_id %>">
+        <%= title %>
+      </a>
+    </h6>
+  </div>
+  <div id="<%= collapse_id %>" class="panel-collapse collapse out">
+    <div class="panel-body">
+    <%= content.html_safe %>
+    </div>
+  </div>
+</div>

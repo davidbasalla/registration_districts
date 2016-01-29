@@ -8,79 +8,84 @@ Based on data from ONS
 </h3>
 </p>
 
-<div class="panel panel-warning">
-  <div class="panel-heading">Notes</div>
-    <div class="panel-body">
-      <p>
+
+<%= render partial: "panel",
+          locals:
+            {
+              class_name: "panel-warning",
+              collapse_id: "collapseOne",
+              title: "Notes",
+              content: 
+                "<p>
         Registrations districts for England and Wales overlap with local authorities, based on boundary data and mapping data from ONS. The only discrepancies in the chart below appear for where the Registration District is a County Council, but the Local Authorities are listed as the District Councils for that County Council.
+      </p>"
+            } 
+%>
+
+<%= render partial: "panel",
+          locals:
+            {
+              class_name: "panel-info",
+              collapse_id: "collapseTwo",
+              title: "Related Quotes",
+              content: 
+                "<p>
+        \"Their existence as autonomous entities came to an end in 1930, when the relevant administrative county or county borough was made responsible. A subsequent series of reforms of local government has resulted in the <strong>responsibility today being held by the relevant county council, unitary authority, metropolitan district, or London borough.</strong>\"
       </p>
-    </div>
-  </div>
-</div>
 
-<div class="panel panel-info">
-  <div class="panel-heading">Related Quote</div>
-  <div class="panel-body">
-  <p>
-"Their existence as autonomous entities came to an end in 1930, when the relevant administrative county or county borough was made responsible. A subsequent series of reforms of local government has resulted in the <strong>responsibility today being held by the relevant county council, unitary authority, metropolitan district, or London borough.</strong>"
-</p>
-
-<p>
-"Registration districts <strong>are not always co-terminous with county boundaries</strong>, and so in the past were grouped into "registration counties" for statistical purposes.""
-</p>
-<p>
-<a href="https://en.wikipedia.org/wiki/Registration_district?oldid=588554443#England_and_Wales">Source on Wikipedia</a>
-</p>
-    </p>
-  </div>
-</div>
-
-<div class="panel panel-success">
-  <div class="panel-heading">Other Links</div>
-    <div class="panel-body">
       <p>
-        <a href="https://geoportal.statistics.gov.uk/Docs/Maps/Registration_districts_(E+W)_2014_map.pdf">
+        \"Registration districts <strong>are not always co-terminous with county boundaries</strong>, and so in the past were grouped into 'registration counties' for statistical purposes.\"
+      </p>
+      <p>
+        <a href=\"https://en.wikipedia.org/wiki/Registration_district?oldid=588554443#England_and_Wales\">Source on Wikipedia</a>
+      </p>"
+            } 
+%>
+
+<%= render partial: "panel",
+          locals:
+            {
+              class_name: "panel-success",
+              collapse_id: "collapseThree",
+              title: "Other Links",
+              content: 
+                "<p>
+        <a href=\"https://geoportal.statistics.gov.uk/Docs/Maps/Registration_districts_(E+W)_2014_map.pdf\">
         Map of Registration Districts E&W
         </a>
       </p>
 
       <p>
         The registration districts and county and unity authority boundaries overlap almost 100%. The only current difference is that the local authority Denbighshire contains two registration districts (Denbighshire North/Gogledd Sir Ddinbych Denbighshire and Denbighshire South/De Sir Ddinbych).
-
         <p>
-          <a href="https://www.google.com/fusiontables/DataSource?docid=1yZBMwM4XDLpWsZyWBSFC2S-hI1MW7-WuZsrGyjEe">
+          <a href=\"https://www.google.com/fusiontables/DataSource?docid=1yZBMwM4XDLpWsZyWBSFC2S-hI1MW7-WuZsrGyjEe\">
             Google Fusion Map of Registration Districts
           </a><br/>
-          <a href="https://www.google.com/fusiontables/data?docid=12l75pWa2dFOQQyswJJ5WdUiu-BykDy-kGeslFngr#map:id=3">
+          <a href=\"https://www.google.com/fusiontables/data?docid=12l75pWa2dFOQQyswJJ5WdUiu-BykDy-kGeslFngr#map:id=3\">
             Google Fusion Map of Local Authorities
         </p>
 
         <p>
-        <a href="https://geoportal.statistics.gov.uk/Docs/Boundaries/County_and_unitary_authorities_(E+W)_2014_Boundaries_(Generalised_Clipped).zip">
+        <a href=\"https://geoportal.statistics.gov.uk/Docs/Boundaries/County_and_unitary_authorities_(E+W)_2014_Boundaries_(Generalised_Clipped).zip\">
           County and Unity Authorities (E&W) 2014 Boundaries (*.shp)
         </a><br/>
-        <a href="https://geoportal.statistics.gov.uk/Docs/Boundaries/Registration_districts_(E+W)_2014_Boundaries_(Generalised_Clipped).zip">
+        <a href=\"https://geoportal.statistics.gov.uk/Docs/Boundaries/Registration_districts_(E+W)_2014_Boundaries_(Generalised_Clipped).zip\">
           Registration Districts (E&W) 20214 Boundaries (*.shp)
         </a>
         </p>
-      </p>
-    </div>
-  </div>
-</div>
-
+      </p>"
+            } 
+%>
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-
-     <ul class="nav navbar-nav navbar-right">
-  <li><%= link_to "Wards, Registration District and Local Authority Mappings", "ward_regd_la_mappings" %></li>
-  <li><%= link_to "Registration District and Local Authority Mappings", "regd_la_mappings" %></li>
-  <li><%= link_to "Registration Districts", "regd_mappings" %></li>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Wards, Registration District and Local Authority Mappings", "ward_regd_la_mappings" %></li>
+        <li><%= link_to "Registration District and Local Authority Mappings", "regd_la_mappings" %></li>
+        <li><%= link_to "Registration Districts", "regd_mappings" %></li>
       </ul>
-
-
     </div>
-    </div>
-    </nav>
+  </div>
+</nav>

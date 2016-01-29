@@ -7,32 +7,37 @@ Based on data from www.nrscotland.gov.uk
 </h3>
 </p>
 
-
-<div class="panel panel-warning">
-  <div class="panel-heading">Notes</div>
-    <div class="panel-body">
-      <p>
+<%= render partial: "panel",
+          locals:
+            {
+              class_name: "panel-warning",
+              collapse_id: "collapseOne",
+              title: "Notes",
+              content: 
+                "<p>
         Registrations districts for Scotland do appear to map to the Councils. Each Register Office belongs to a Registration District (identified by Registration District Number). Each councils has many Registration Districts and Register Offices. However anyone can register at any Register Office in the country.
       </p>
       <p>
         No boundary data could be found for Registration Districts for Scotland.
+      </p>"
+            } 
+%>
+
+<%= render partial: "panel",
+          locals:
+            {
+              class_name: "panel-info",
+              collapse_id: "collapseTwo",
+              title: "Related Quotes",
+              content: 
+                "<p>
+        \"Registration districts in Scotland came into being with the introduction of civil registration there in 1855; away from the cities their boundaries usually coincided with civil parishes. They still exist today in their own right and <strong>in many places do not coincide with the current council areas</strong>; commonly both geographically large and densely populated Council Areas will have several registration districts, each with a registrar within easy reach of most residents.\"
+        <a href=\"https://en.wikipedia.org/wiki/Registration_district?oldid=588554443#Scotland\">Source on Wikipedia</a>
       </p>
-    </div>
-  </div>
-</div>
 
-<div class="panel panel-info">
-  <div class="panel-heading">Related Quote</div>
-  <div class="panel-body">
-    <p>
-"Registration districts in Scotland came into being with the introduction of civil registration there in 1855; away from the cities their boundaries usually coincided with civil parishes. They still exist today in their own right and <strong>in many places do not coincide with the current council areas</strong>; commonly both geographically large and densely populated Council Areas will have several registration districts, each with a registrar within easy reach of most residents."
-<a href="https://en.wikipedia.org/wiki/Registration_district?oldid=588554443#Scotland">Source on Wikipedia</a>
-</p>
-
-<p>
-"The law allows a birth to be registered in any registration district in Scotland.  You can obtain the address of the local registrar from the hospital, the doctor, the telephone book (see under 'Registration of Births, Death and Marriages') and the Directory of Registrars in Scotland (70 Kb PDF file)."
-<a href="http://www.nrscotland.gov.uk/registration/registering-a-birth">Source on nrscotland</a>
-</p>
-
-  </div>
-</div>
+      <p>
+        \"The law allows a birth to be registered in any registration district in Scotland.  You can obtain the address of the local registrar from the hospital, the doctor, the telephone book (see under 'Registration of Births, Death and Marriages') and the Directory of Registrars in Scotland (70 Kb PDF file).\"
+        <a href=\"http://www.nrscotland.gov.uk/registration/registering-a-birth\">Source on nrscotland</a>
+      </p>"
+            } 
+%>
